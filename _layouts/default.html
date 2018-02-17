@@ -34,10 +34,13 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-
             {{content}}
+        </section>
 
+        <aside id="sidebar">
+            {% assign previous_post_date = "0000" %}
             {% assign posts = site.posts %}
+
             <ul>
               {% for post in  posts limit:20 %}
                 {% assign current_post_date =  post.date | date: "%m%y" %}
@@ -48,8 +51,6 @@
 
                 <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><br>
 
-                <div class="mobile visible-sm visible-xs"><br></div>
-
                 {% assign previous_post_date = current_post_date %}
 
                 {% if current_post_date != previous_post_date %}
@@ -57,10 +58,6 @@
                 {% endif %}
               {% endfor %}
             </ul>
-
-        </section>
-
-        <aside id="sidebar">
           {% if site.show_downloads %}
             <a href="{{ site.github.zip_url }}" class="button">
               <small>Download</small>
