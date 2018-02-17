@@ -23,7 +23,7 @@ github_username: AkiraJ48
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hacker
+theme: hanuman
 plugins:
   - jekyll-feed
 
