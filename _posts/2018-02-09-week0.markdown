@@ -6,3 +6,38 @@ categories: MYOB
 ---
 
 # [](#header-1)Orientation
+
+* * *
+
+## [](#header-1)Monday and Tuesday
+These two days, despite being quite tiring, were also incredibly useful, as
+a lot of my queries and lack of knowledge about MYOB and its structure was
+answered. One critique would be to provide a more interactive platform when
+giving presentations, not in the form of asking questions from the proteges,
+but more so creating group activities or even simple quizes.
+
+## [](#header-1)Wednesday
+Personally, one of the highlights of the orientation program was the introduction
+of the REACH program, which I found incredibly entertaining. I believe its value
+lies in its ability in improving relationships among grads, by providing a
+platform to act more freely. I think this program should definitely continue
+as part of MYOB's protege program.
+
+Additionally, the "unconference" event at the Brauhaus bar was amazing. I
+really enjoyed the opportunity to talk and drink with managers, developers
+and dev leads from not only people from Melbourne, but also people from
+Sydney and Auckland.
+
+## [](#header-1)Thursday
+Thursday was a very useful day as part of orientation. Being exposed to the
+front side of the company, the people who sell the company was a great
+experience, particularly being given the opportunity to listen in on calls
+aswell.
+
+## [](#header-1)Friday
+I think the activities/contents of Friday was a great way to end the week.
+Being able to reflect on previous activities, what we've learnt, and more so
+generally just reiterate what we've undergone is extremely useful.
+
+
+* * *
