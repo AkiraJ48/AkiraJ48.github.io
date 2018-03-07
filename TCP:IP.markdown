@@ -1,0 +1,151 @@
+---
+layout: default
+title:  "TCP/IP Basics"
+date:   2018-03-07 11:07:02 +1100
+categories: MYOB
+---
+
+## [](#header-1)TCP/IP Basics
+
+The TCP/IP model is a simplification of the OSI model. In contrast to the OSI model,
+the TCP/IP model only has 4 layers, these are:
+
+    1. Application
+    2. Host-to-Host (Transport)
+    3. Internet (Network)
+    4. Network Access (Composed of the data link and physical layer)
+
+I'll primarily only be covering the Host-to-Host Layer and Internet Layer, as I
+feel that these are the most important layers when it comes sending information from
+one computer to another in regards to software.
+
+![](./assets/images/tcp_ip_encapsulation.gif)
+
+## [](#header-2)Host-to-Host Layer
+
+The ***purpose*** of this layer is to both encapsulate and de-encapsulate the necessary information needed
+to send information from one process on a computer to another process on another computer. In many cases,
+the host-to-host layer will divide large amounts of information from the application layer (i.e. from applications)
+into smaller chunks of information, and encapsulate these chunks into something known as a ***packets***.
+All that these packets contain are chunks of information to be sent, and a ***header***.
+In addition, the host-to-host layer is also in charge of reconstructing the sent packets into
+the initial message that was sent, and passes that information to the application layer.
+
+> Message from application > Encapsulated into packet > Sent to internet layer
+> Internet layer pushes packet up > De-encapsulate packet > Send message to application
+
+* * *
+
+<strong>Header<strong>
+
+
+
+![](./assets/images/tcp_pdu_format.gif)
+
+As we can see above, the header contains a plethora of information that is necessary for information
+to be transported from one computer to another successfully. Some of the more noteworthy are:
+
+1. ***Source/Destination Port:*** This represents on which port the application in which our information is
+coming from and being sent to are.
+
+2. ***Checksum:*** The purpose of the checksum is to check if all the information that has been sent has
+been successfully received and not corrupted in any way.
+
+* * *
+
+<strong>Packets:</strong> As we mentioned before, a packet merely consists of the above
+header, and the original message from the application.
+
+ * * *
+<strong>Host-to-Host Layer Primary Protocols</strong>
+
+> These protocols are basically ways in which we send the information, and which options
+in the header we are effectively choosing to use or not use. For example, for UDP, we don't
+use the flags ACK, SYN, FIN etc.
+
+1. ***TCP (Transmission Control Protocol):*** The main purpose of TCP is to ensure that information is transported reliably and without errors.
+   The transport layer does this task by establishing connections between network devices, acknowledging the delivery of information,
+   and resending information that haven't been received or it is corrupted when it arrives. TCP is known as a
+   connection-orientated protocol. This means that for every message we send to another computer, we must receive a response from
+   the other computer, that they have successfully received the entire message.
+
+2. ***UDP (User Datagram Protocol):*** If the main purpose of TCP is offer reliability , then the main purpose of UDP,
+   is to ensure that information is transported as quick as possible, even if there may be errors. UDP is known as
+   a connectionless protocol, and will send information without regard for reliability. E.g this means that when we do
+   send a message, we aren't expecting a response back indicating that the other computer has successfully
+   received the message we sent.  
+
+* * *
+
+For more in-depth analysis on how the transport layer works:
+[https://www.technologyuk.net/telecommunications/internet/transport-layer-protocols.shtml](another-place)
+[https://www.pluralsight.com/blog/it-ops/networking-basics-tcp-udp-tcpip-osi-models](another-place)
+
+In addition, a great tool to actually visualize this process of encapsulation is wireshark:
+[https://www.wireshark.org/](another-place)
+
+## [](#header-2)Internet Layer
+
+The internet layer follows a similar approach as the host-to-host layer, in which it constructs
+and deconstructs information coming from the layer above and below it. Similar to the host-to-host layer,
+it encapsulates the information received into another packet, that consists of the given information,
+and another header. Additionally, the reason why we typically use TCP for reliability is that the internet
+layer is inherently unreliable, and therefore we must place something reliable on top of it,
+to ensure reliability.
+
+>(NOTE: The internet layer does a whole heap more, especially in the contexts
+of routers, i'll slowly try to cover that material as well.)
+
+* * *
+
+<strong>Header<strong>
+
+![](./assets/images/ip-packet-header.gif)
+
+
+As we can see above, there is a tonne of information found in the packet. Some
+of the more noteworthy ones are:
+1. ***Source/Destination Address:*** These are the IP addresses of your computer
+and the computer to which you want to send your message to.
+
+2. ***Fragmentation Offset:*** These are used as a way to reconstruct the Packets
+received from the layer below, as packets aren't always received in the order
+they were sent.
+
+3. ***Header Checksum:*** Similar to the host-to-host layer, the checksum is used
+to check if all of the information has been received and not corrupted in any way.
+
+4. ***Time-to-live (TTL):*** Represents how long we expect the packet sent to live
+for (i.e. an actual time value - 1 minute). We do this for a couple of reasons, one  
+is that the packet may be stuck somewhere and we need some way to remove it. Another
+reason is to stop duplication of information, there are times where we may have to resend
+information, and if there exist duplicate packets, that can cause a lot of issues. Thus
+we put a timer on the packet.
+
+
+* * *
+
+<strong>IP (Internet Protocol):</strong>
+IP represents the protocol that is used on the internet layer for the TCP/IP model.
+You've probably heard of IPv4 and IPv6. IP represents the protocol and v4 or v6 represent
+the version types. Theres a couple of differences between the 2, the primary being the number
+of IP addresses available to each, additionally IPv6 doesn't use fragmentation as a method
+of reconstructing packets.
+
+* * *
+
+## [](#header-2)Summary
+
+![](./assets/images/tcp_ip_encapsulation.gif)
+
+
+From the above image, we can identify the process of encapsulation, from the application layer all
+the way to the link layer. At each layer, we can see new headers being applied to each
+chunk of data. And then similarly, as information is being passed up through the layers,
+each header will be de-encapsulated at the relevant layer.
+
+
+
+
+
+* * *

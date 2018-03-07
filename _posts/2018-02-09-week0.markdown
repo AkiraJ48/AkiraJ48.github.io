@@ -10,7 +10,6 @@ categories: MYOB
 * * *
 
 ## [](#header-1)Monday and Tuesday
-Test
 These two days, despite being quite tiring, were also incredibly useful, as
 a lot of my queries and lack of knowledge about MYOB and its structure was
 answered. One critique would be to provide a more interactive platform when
@@ -33,7 +32,7 @@ Sydney and Auckland.
 Thursday was a very useful day as part of orientation. Being exposed to the
 front side of the company, the people who sell the company was a great
 experience, particularly being given the opportunity to listen in on calls
-aswell.
+as well.
 
 ## [](#header-1)Friday
 I think the activities/contents of Friday was a great way to end the week.

@@ -1,0 +1,92 @@
+---
+layout: default
+title:  "Week 3"
+date:   2018-03-02 11:07:02 +1100
+categories: MYOB
+---
+
+## [](#header-1)Week 2: Tasks Completed / Interesting Workshops
+
+* * *
+
+
+## [](#header-2) Project
+On Monday, I talked to my mentor Graham, and he gave me a project with the following specifications.
+
+Java backend
+Web Framework - Spring Framework, Spring Boot, create JSON API
+Database - Postgres, ORM tool use hibernate from Spring
+Java 8, look at streams, no loops
+https://start.spring.io/ add Web, Postgres, JPA, use Gradle
+PostGres database viewer https://www.pgadmin.org/
+
+Break code into layers,
+- Controller - handling the endpoint mapping, external stuff, calling service
+- Service - usually is the business logic
+- Repository, entity belongs to here, the only place that should talk to db
+- Api Models
+
+1. Monday: talked to graham and he gave me a project to start working on (reference email). Spent time setting up a zen hub board breaking down the tasks. Spent time getting the db actually connected, because IntelliJ was throwing me errors associated with the datasource - had to change application.properties to the url of the db
+HIBERNATE is taking issues - can’t find hibernate properties
+Download java 1.8 instead of 9, because 9 is bad
+Project is set up, need to figure out how to not print so much stuff to the console cause its killing me
+Need to think of a domain problem
+
+2. Wednesday:
+Is it good practice to specify all the required headers
+3.1 http://www.baeldung.com/spring-requestmapping
+Or should I instead go through the given JSON and validate it there?
+DAO vs Repository
+Ask graham about spring data, spring jpa and hibernate, and when to use which
+Currently the data is not being saved when the application closes  
+
+
+Look at dataJPATest
+Transactional
+
+Fixed an issue with posting with an image for testing
+Looking at socket programming with java.net
+Did code kata -> pair programmed w/ Pedro
+
+## [](#header-2) Workshops
+Basic Networking
+
+
+## [](#header-2) Generators
+On Friday, Pedro and I tackled some codewars challenges together. We came across
+a problem of generating combinations. Initially we looked for inspiration on the internet,
+and as a result we came across generators. I had previously approached generators when
+I was learning Python in my first year of uni, however I had struggled to understand
+why they were used and how. As such we asked Sol to give us a brief overview of what they
+were and why/how they worked.
+
+```
+def fib():
+    a = 0
+    b = 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+a = fib()
+a.next()
+```
+
+I feel the best way to explain is with an example. Firstly, the reason why we use
+generators is to minimise the amount of data/memory we are currently using.
+All we need to store is the current state of the function, the current state of
+the variables a & b.
+
+
+## [](#header-2) What do I do?
+There was this whole debacle on slack that we proteges shouldn't even look at spring
+anymore? I agree in that we should learn the fundamentals, but he should really
+be discussing that with our mentors. Theres a reason we are proteges and that's
+because we lack knowledge, so it's difficult for us to say, yea that's the correct option,
+i'm going to do that. We expect the people in charge of this program to best coordinate
+what we should learn as to provide us with a foundation. That's not to say we shouldn't
+take the initiative and attempt to do that ourselves, but there's just so much information
+out there, so much knowledge that it's impossible for us to clearly know
+what the most "important" fundamentals are, especially for industry...
+
+* * *

@@ -5,4 +5,38 @@ date:   2018-02-16 11:07:02 +1100
 categories: MYOB
 ---
 
-## [](#header-1)Week 1: Tasks Completed / Interesting Workshops
+## [](#header-1)Week 1: Tasks Completed / Thoughts
+
+* * *
+
+## [](#header-2) Katas
+The two major katas that I completed this week were the **MYOB CSV Parser Challenge** set by my mentor,
+and the **String Calculator Kata**.
+
+1. _MYOB CSV Parser Challenge_
+
+2. _String Calculator Kata_
+
+3. _Code Wars_
+
+## [](#header-2) Workshops
+TDD Workshop:
+
+Pair Programming Workshop:
+
+## [](#header-2) Testing Environments
+Set up and familiarized myself with jUnit in IntelliJ. In addition, set up Jest for Javascript
+testing.
+
+## [](#header-2) Setting up AWS
+Created an AWS EC2 instance.
+
+## [](#header-2) Git
+Undertook the git branching exercise game. In the beginning I felt it was quite useful,
+but at the later stages, I felt that as opposed to using my knowledge of the git commands,
+I was just visually attempting to solve the problems.
+
+Sol also gave me a quick session on dealing with git conflicts, which was very
+useful.
+
+* * *

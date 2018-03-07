@@ -1,0 +1,36 @@
+---
+layout: default
+title:  "Week 3"
+date:   2018-03-09 11:07:02 +1100
+categories: MYOB
+---
+
+## [](#header-1)Week 2: Tasks Completed / Interesting Workshops
+
+Monday:
+Had a talk with Graham, he said continue on with learninig Spring.
+He also made mention that we'll start going over the Level 1 technical skills
+stuff and making sure that I have decent understanding of each criteria.
+He also went over some of my code again, and offered some tips to refactor.
+
+GIT (Also said I should read these for git):
+https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.xybg255fi
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+
+Also had a talk with Jon Eaves about his position in the company (architect), what he
+does, and he's opinion on spring related discussions.
+
+Spent time creating test cases for the spring project once again.
+
+Also spent an hour coming up with team name and logo
+
+Tuesday:
+Agile Workshop
+
+Wednesday:
+1. Talked to Mark
+--> Should share weekly goals with mentor
+--> Should focus on our fundamentals that will carry us throughout the years
+--> Need to publish blogs ASAP
+--> Make notes on books that I read and make a blog post on them
+--> Annual leave - 5 to 7 days are automatically taken at the end of the year
