@@ -5,66 +5,48 @@ date:   2018-02-23 11:07:02 +1100
 categories: MYOB
 ---
 
-## [](#header-1)Week 3: Tasks Completed / Thoughts
+# [](#header-1)Week 2
 
 * * *
 
-## [](#header-2) Mini-Project
-This week, I had decided to work on a mini-project that involved creating a web application
-that would take in a git command (e.g. git add . && git commit -m "first commit" -a) and
-parse each command, and explain what each command did. E.g. git add "test.js" would return
-"User is attempting to add a file to the files to be committed, which is test.js.
+## [](#header-2) Git Parser Mini-Project (NodeJS)   
+URL: [https://github.com/AkiraJ48/Git-String-Project-Backend](another-place)
 
-I wanted to tackle this sort of mini-project because I felt that:
-    1. It could improve my understanding of both NodeJS and ECMA6
-    2. It could improve my understanding of basic git commands and what they should do
-
-Repo can be found here: _https://github.com/AkiraJ48/Git-String-Project-Backend_
-
-**NOTES**:
-Initially I had trouble actually parsing and grabbing all parameters associated with a git command.
-E.g. If I had the command git add . && git command -a -m "yes"
-I would have to ensure that each command would retain its flags, and at the same time
-pair messages with flags (e.g. pair "yes" with -m). Initially I was attempting to
-solve this problem recursively, however after struggling for a while, I realised that
-using recursion was just adding complexity to the problem, and I opted for a simpler
-method of iteration.
-
-Additionally, in order to improve my understanding and usage of core functions within JS,
-(filter, map, reduce), I attempted to restrict my usages of for loops as much as I could,
-and focus on using those functions.
+* * *  
 
 ## [](#header-2) Katas
-The major kata that I completed this week was the **Object Composition Kata** which I found on:
-_https://github.com/MYOB-Technology/General_Developer/blob/master/things-we-value/technical/programming/object-composition.md_
+***Object Composition Kata***  (Need to push local repo to remote.)  
+URL: [_https://github.com/MYOB-Technology/General_Developer/blob/master/things-we-value/technical/programming/object-composition.md_](another-place)  
 
-I found that it was extremely useful in regards to understanding the pros and cons of
-composition over inheritance, and why we would choose to composition over inheritance.
-For example:
-        1. Reusability
-        2. Flexibility
-
-A good reference on why using inheritance can lead to duplication or needless complexity of classes
-Composition provides a great method of flexibility especially when it comes to using interfaces in place of inheritance.
+* * *
 
 ## [](#header-2) Codewars
-In Codewars I also managed to achieive lvl 6 kyuu.
-_https://www.codewars.com/users/AkiraJ48_
+Managed to achieve lvl 6 kyuu.   
+URL: [_https://www.codewars.com/users/AkiraJ48_](another-place)
 
+* * *
 
 ## [](#header-2) Workshops
-Git Basics
+***Git Basics***
 
-Command Shell Scripting
+***Command Shell Scripting***
+
+* * *
 
 ## [](#header-2) Code Retreat
-The code retreat involved 30 minute rotations, where in each rotation constraints would
-be applied to the given problem, and we'd have to attempt the problem with different
-pairs. Personally, I found that attempting to solve the problem with constraints involved
-was extremely interesting e.g. a method can have no longer than 4 lines of code, or
-we can't use our touchpad/mouse.
-
-The only criticism I had with this was that me and several other proteges had previously
+1. <strong>Problem:</strong> String Kata Challenge (From Week 1)   
+2. <strong>Process:</strong> Involved 30 minute iterations, where we would pair up
+with a new person each time. Within that 30 minutes, we were tasked with attempting
+to solve the problem, given the constraints. In each iteration, more constraints would
+be applied.   
+3. <strong>Constraints:</strong>  
+    -> Methods can only have up to 4 lines of code.   
+    -> No using mouse/trackpad.    
+    -> No Regex.
+4. <strong>Thoughts:</strong> Personally, I really enjoyed the process of attempting
+to solve the given problem with constraints. I felt it added to the complexity of the
+problem. In addition, I learnt different ways of approaching the problem from
+my peers which was very beneficial. The only criticism I have is that several other proteges and I had previously
 completed the same problem, so when introduced to the problem, we weren't able to
 necessarily come in with a fresh mind (i.e. we already had preconceived notions on
 how to solve the problem).

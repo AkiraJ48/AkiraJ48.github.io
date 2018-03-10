@@ -5,38 +5,47 @@ date:   2018-02-16 11:07:02 +1100
 categories: MYOB
 ---
 
-## [](#header-1)Week 1: Tasks Completed / Thoughts
+# [](#header-1)Week 1
 
 * * *
 
 ## [](#header-2) Katas
-The two major katas that I completed this week were the **MYOB CSV Parser Challenge** set by my mentor,
-and the **String Calculator Kata**.
+***MYOB CSV Parser Challenge***   
+URL: (Not available as repository is set to private.)
 
-1. _MYOB CSV Parser Challenge_
+***String Calculator Kata***  
+URL: [https://github.com/AkiraJ48/String-Kata-Challenge](another-place)
 
-2. _String Calculator Kata_
+***Code Wars***  
+URL: [https://www.codewars.com/users/AkiraJ48](another-place)
 
-3. _Code Wars_
+* * *
 
 ## [](#header-2) Workshops
-TDD Workshop:
+***TDD Workshop***
 
-Pair Programming Workshop:
+***Pair Programming Workshop***
+
+* * *
 
 ## [](#header-2) Testing Environments
-Set up and familiarized myself with jUnit in IntelliJ. In addition, set up Jest for Javascript
-testing.
+Set up and familiarized myself with jUnit for IntelliJ and Jest for Javascript.
+
+* * *
 
 ## [](#header-2) Setting up AWS
-Created an AWS EC2 instance.
+Created a simple AWS EC2 instance.  
+URL: [https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/](another-place)
+
+* * *
 
 ## [](#header-2) Git
-Undertook the git branching exercise game. In the beginning I felt it was quite useful,
-but at the later stages, I felt that as opposed to using my knowledge of the git commands,
-I was just visually attempting to solve the problems.
+Undertook the git branching exercise game.  
+URL: [http://pcottle.github.io/learnGitBranching/](another-place)  
 
-Sol also gave me a quick session on dealing with git conflicts, which was very
-useful.
+In the beginning I felt it was quite useful, but at the later stages,
+I felt that as opposed to using my knowledge of the git commands, I was just visually attempting to solve the problems.
+
+Sol also gave me a quick session on dealing with git conflicts using vi, which I found very useful.
 
 * * *

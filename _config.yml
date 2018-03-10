@@ -16,11 +16,12 @@
 title: Mattias' MYOB Blog
 author: Mattias Williams
 description: >- # this means to ignore newlines until "baseurl:"
-  This is a blog containing my experiences in the MYOB acceleration program!
+  Graduate Software Developer
 baseurl: "" # the subpath of your site, e.g. /blog
 repository_url: "https://github.com/AkiraJ48/AkiraJ48.github.io"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: AkiraJ48
+github_url: "https://github.com/AkiraJ48"
 
 # Build settings
 markdown: kramdown

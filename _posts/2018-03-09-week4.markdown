@@ -1,36 +1,57 @@
 ---
 layout: default
-title:  "Week 3"
+title:  "Week 4"
 date:   2018-03-09 11:07:02 +1100
 categories: MYOB
 ---
 
-## [](#header-1)Week 2: Tasks Completed / Interesting Workshops
+# [](#header-1)Week 4
 
-Monday:
-Had a talk with Graham, he said continue on with learninig Spring.
-He also made mention that we'll start going over the Level 1 technical skills
-stuff and making sure that I have decent understanding of each criteria.
-He also went over some of my code again, and offered some tips to refactor.
+* * *
 
-GIT (Also said I should read these for git):
-https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.xybg255fi
-https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+## [](#header-2) Spring Project - Testing   
+URL: [https://github.com/AkiraJ48/Dog-Rescue-Project-Backend](another-place)   
+Focused on creating unit testing for controllers, services and validation processes.
+Working on creating an integration test for basic endpoints of the system.
 
-Also had a talk with Jon Eaves about his position in the company (architect), what he
-does, and he's opinion on spring related discussions.
+* * *
 
-Spent time creating test cases for the spring project once again.
+## [](#header-2) GIT
 
-Also spent an hour coming up with team name and logo
+[https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.xybg255fi](another-place)
+[https://www.atlassian.com/git/tutorials/merging-vs-rebasing](another-place)
 
-Tuesday:
-Agile Workshop
+* * *
 
-Wednesday:
-1. Talked to Mark
---> Should share weekly goals with mentor
---> Should focus on our fundamentals that will carry us throughout the years
---> Need to publish blogs ASAP
---> Make notes on books that I read and make a blog post on them
---> Annual leave - 5 to 7 days are automatically taken at the end of the year
+## [](#header-2) Workshops   
+
+***Agile***   
+Spent all of Tuesday undertaking an Agile workshop with Terry. Gained an understanding of:   
+    1. SCRUM/KANBAN   
+    2. Core Agile principles  
+    3. What/Why/When/How Agile  
+    4. Alignment/Autonomy   
+
+***Editor Confidence***
+
+***Linux Basics (History)***
+
+***Bash Commands***   
+URL: [http://overthewire.org/wargames/bandit/bandit0.html](another-place)
+
+***Docker & Buildkite***
+
+***Dependency Injection & Inversion of Control***
+
+* * *
+
+## [](#header-2) TCP/IP   
+Look at TCP/IP post to the right.
+
+* * *
+
+## [](#header-2) Protege Team Name - Logo   
+Protege group decided upon the group name "N7" which stems from Mass Effect.   
+(Highly recommend the game).
+
+* * *

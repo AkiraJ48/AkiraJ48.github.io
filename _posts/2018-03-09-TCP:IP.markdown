@@ -2,10 +2,10 @@
 layout: default
 title:  "TCP/IP Basics"
 date:   2018-03-07 11:07:02 +1100
-categories: MYOB
+categories: Internet
 ---
 
-## [](#header-1)TCP/IP Basics
+## [](#header-1)TCP/IP Basics (Work in progress)
 
 The TCP/IP model is a simplification of the OSI model. In contrast to the OSI model,
 the TCP/IP model only has 4 layers, these are:
