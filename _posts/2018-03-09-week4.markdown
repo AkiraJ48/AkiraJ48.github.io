@@ -17,7 +17,7 @@ Working on creating an integration test for basic endpoints of the system.
 * * *
 
 ## [](#header-2) GIT
-  
+
 [Resource 1](https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.xybg255fi)   
 [Resource 2](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)   
 
@@ -46,7 +46,7 @@ Link to: [Bash Game](http://overthewire.org/wargames/bandit/bandit0.html)
 * * *
 
 ## [](#header-2) TCP/IP   
-Look at TCP/IP post to the right.
+Link: [Explaining TCP/IP](https://akiraj48.github.io/internet/2018/03/07/TCP-IP.html)
 
 * * *
 

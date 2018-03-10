@@ -38,7 +38,8 @@ Pedro and I decided to pair program, and tackle some Codewars challenges togethe
 The problem we came across involved the use of generating large amounts of combinations.
 To solve this problem functionally, we looked for inspiration and thus came across the
 usage of generators. I felt that generators are fairly complex tool, and thus decided to
-write a blog about it. <strong>(It can be found on the index to the right).</strong>
+write a blog about it.    
+<strong>Link: [Generators](https://akiraj48.github.io/functional/2018/03/09/generators.html)</strong>
 
 
 
