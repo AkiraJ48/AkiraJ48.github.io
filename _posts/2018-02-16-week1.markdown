@@ -11,13 +11,13 @@ categories: MYOB
 
 ## [](#header-2) Katas
 ***MYOB CSV Parser Challenge***   
-URL: (Not available as repository is set to private.)
+Link to: (Not available as repository is set to private.)
 
 ***String Calculator Kata***  
-URL: [https://github.com/AkiraJ48/String-Kata-Challenge](another-place)
+Link to: [String Kata Repository](https://github.com/AkiraJ48/String-Kata-Challenge)
 
 ***Code Wars***  
-URL: [https://www.codewars.com/users/AkiraJ48](another-place)
+Link to: [Codewars Profile](https://www.codewars.com/users/AkiraJ48)
 
 * * *
 
@@ -35,13 +35,13 @@ Set up and familiarized myself with jUnit for IntelliJ and Jest for Javascript.
 
 ## [](#header-2) Setting up AWS
 Created a simple AWS EC2 instance.  
-URL: [https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/](another-place)
+Link to: [Create an AWS instance](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/)
 
 * * *
 
 ## [](#header-2) Git
 Undertook the git branching exercise game.  
-URL: [http://pcottle.github.io/learnGitBranching/](another-place)  
+Link to: [Git Exercise](http://pcottle.github.io/learnGitBranching/)  
 
 In the beginning I felt it was quite useful, but at the later stages,
 I felt that as opposed to using my knowledge of the git commands, I was just visually attempting to solve the problems.

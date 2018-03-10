@@ -10,16 +10,16 @@ categories: MYOB
 * * *
 
 ## [](#header-2) Spring Project - Testing   
-URL: [https://github.com/AkiraJ48/Dog-Rescue-Project-Backend](another-place)   
+URL: [Spring Project](https://github.com/AkiraJ48/Dog-Rescue-Project-Backend)   
 Focused on creating unit testing for controllers, services and validation processes.
 Working on creating an integration test for basic endpoints of the system.
 
 * * *
 
 ## [](#header-2) GIT
-
-[https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.xybg255fi](another-place)
-[https://www.atlassian.com/git/tutorials/merging-vs-rebasing](another-place)
+  
+[Resource 1](https://medium.com/@porteneuve/getting-solid-at-git-rebase-vs-merge-4fa1a48c53aa#.xybg255fi)   
+[Resource 2](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)   
 
 * * *
 
@@ -37,7 +37,7 @@ Spent all of Tuesday undertaking an Agile workshop with Terry. Gained an underst
 ***Linux Basics (History)***
 
 ***Bash Commands***   
-URL: [http://overthewire.org/wargames/bandit/bandit0.html](another-place)
+Link to: [Bash Game](http://overthewire.org/wargames/bandit/bandit0.html)
 
 ***Docker & Buildkite***
 

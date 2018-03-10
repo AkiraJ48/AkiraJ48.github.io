@@ -77,12 +77,12 @@ use the flags ACK, SYN, FIN etc.
 
 * * *
 
-For more in-depth analysis on how the transport layer works:
-[https://www.technologyuk.net/telecommunications/internet/transport-layer-protocols.shtml](another-place)
-[https://www.pluralsight.com/blog/it-ops/networking-basics-tcp-udp-tcpip-osi-models](another-place)
+For more in-depth analysis on how the transport layer works:    
+[Resource 1](https://www.technologyuk.net/telecommunications/internet/transport-layer-protocols.shtml)    
+[Resource 2](https://www.pluralsight.com/blog/it-ops/networking-basics-tcp-udp-tcpip-osi-models)    
 
 In addition, a great tool to actually visualize this process of encapsulation is wireshark:
-[https://www.wireshark.org/](another-place)
+[Wireshark](https://www.wireshark.org/)
 
 ## [](#header-2)Internet Layer
 

@@ -89,4 +89,4 @@ dedicated to creating new stacks (for recursion), we have a simple saved state o
 in which we can regularly retrieve.
 
 References:
-[https://medium.freecodecamp.org/how-and-why-you-should-use-python-generators-f6fb56650888](another-place)
+[Medium - How to use python generators](https://medium.freecodecamp.org/how-and-why-you-should-use-python-generators-f6fb56650888)

@@ -10,19 +10,19 @@ categories: MYOB
 * * *
 
 ## [](#header-2) Git Parser Mini-Project (NodeJS)   
-URL: [https://github.com/AkiraJ48/Git-String-Project-Backend](another-place)
+Link to: [Git Parser Project](https://github.com/AkiraJ48/Git-String-Project-Backend)
 
 * * *  
 
 ## [](#header-2) Katas
 ***Object Composition Kata***  (Need to push local repo to remote.)  
-URL: [_https://github.com/MYOB-Technology/General_Developer/blob/master/things-we-value/technical/programming/object-composition.md_](another-place)  
+Link to: [Kata Repository](https://github.com/MYOB-Technology/General_Developer/blob/master/things-we-value/technical/programming/object-composition.md)  
 
 * * *
 
 ## [](#header-2) Codewars
 Managed to achieve lvl 6 kyuu.   
-URL: [_https://www.codewars.com/users/AkiraJ48_](another-place)
+Link to: [Codewars Profile](https://www.codewars.com/users/AkiraJ48)
 
 * * *
 
