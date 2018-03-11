@@ -7,6 +7,8 @@ categories: Internet
 
 # [](#header-1)TCP/IP Basics (Work in progress)
 
+* * *
+
 The TCP/IP model is a simplification of the OSI model. In contrast to the OSI model,
 the TCP/IP model only has 4 layers, these are:
 
@@ -20,6 +22,8 @@ feel that these are the most important layers when it comes sending information 
 one computer to another in regards to software.
 
 ![](./assets/images/tcp_ip_encapsulation.gif)
+
+* * *
 
 ## [](#header-2)Host-to-Host Layer
 
@@ -84,6 +88,8 @@ For more in-depth analysis on how the transport layer works:
 In addition, a great tool to actually visualize this process of encapsulation is wireshark:
 [Wireshark](https://www.wireshark.org/)
 
+* * *
+
 ## [](#header-2)Internet Layer
 
 The internet layer follows a similar approach as the host-to-host layer, in which it constructs
@@ -143,9 +149,6 @@ From the above image, we can identify the process of encapsulation, from the app
 the way to the link layer. At each layer, we can see new headers being applied to each
 chunk of data. And then similarly, as information is being passed up through the layers,
 each header will be de-encapsulated at the relevant layer.
-
-
-
 
 
 * * *

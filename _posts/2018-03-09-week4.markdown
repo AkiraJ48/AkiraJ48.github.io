@@ -37,11 +37,13 @@ Spent all of Tuesday undertaking an Agile workshop with Terry. Gained an underst
 ***Linux Basics (History)***
 
 ***Bash Commands***   
+Link to: [Bash Commands](https://akiraj48.github.io/design/2018/03/07/bash-shortcuts.html)
 Link to: [Bash Game](http://overthewire.org/wargames/bandit/bandit0.html)
 
 ***Docker & Buildkite***
 
 ***Dependency Injection & Inversion of Control***
+Link: [Explaining Dependency Injections & Inversion of Control](https://akiraj48.github.io/design/2018/03/07/dependency-injection.html)
 
 * * *
 
