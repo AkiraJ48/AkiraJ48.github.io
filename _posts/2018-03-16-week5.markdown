@@ -1,0 +1,65 @@
+---
+layout: default
+title:  "Week 5"
+date:   2018-03-13 11:07:02 +1100
+categories: MYOB
+---
+
+# [](#header-1)Week 5
+
+* * *
+
+## [](#header-2)Spring Project Refactoring
+***Initial Refactoring***   
+Initially, I approached the problem of validating my objects via an external
+validator object, which I would pass through to my _Service_ layer, whereupon creating
+my object with the posted values (via HTTP), I would then validate:
+DogValidator.validate(dogObject)
+
+However, after listening to the discussions of other people, in which they
+talked about making the object implement an interface IValidateable, and
+then be able to call upon the method _isValid_ directly onto the object (e.g.
+dogObject.isValid()), I attempted to try to follow this idealogy within my project.
+This involved creating an additional interface, a generic abstract class that implemented
+said interface, and within that said abstract class, take in an IValidator. From there,
+my model would extend the generic abstract class, and thus have access to a validator
+via its superclass.  
+
+After implementing this method (after some difficulty), I decided to have Sol take a quick
+look at it and gather his thoughts about it. He actually recommended me to implement
+something very similar to what I had originally done, as what I had refactored to
+made it more difficult for others to potentially understand the process of validation occurring,
+and the readability of my structure as well.
+
+***Refactoring the Refactoring***   
+After taking Sols considerations into account, I decided to opt back to what I had
+originally (and add some extra parts as well).
+
+* * *
+
+## [](#header-2)RMIT Careers Tech Fair
+Had the opportunity to participate as one of MYOB's representatives at the
+RMIT Careers Tech Fair, which was a great experience. Met a lot of different
+RMIT students, and got to be on the other end of scenario (i.e. be the
+one that's 'recruiting' as opposed to looking for a company, which is a
+nice experience).
+
+* * *
+
+## [](#header-2) Workshops
+***AWS VPC Workshop***   
+1. _VPC (Virtual Private Cloud):_ represents a closed network, where the instances within
+said network can communicate to each other, but not necessarily to external sources. VPC's
+are also region specific (geographically) i.e. can have them in Sydney, Oregon, Texas etc, but it
+cannot span other regions. To access VPC's externally, we must use an internet gateway (IGW), which
+essentially represents the door to the VPC's.    
+2. _Availability Zones (AZ):_ represents the actual physical location of the data centers where
+the instances are stored. Multi AZ's are basically multiple availability zones, which are used
+as a way to prevent loss. As we typically don't want our application stored on a single
+physical disk, we'd prefer to keep them stored on a multitude on them (in case something occurs -
+because then we can start using another instance somewhere else or redirect traffic to another
+instance).    
+3. _Subnets:_ represents the sub-division of an IP-address. These can also be representative of the
+availability zones as well. Subnets can communicate to each other via the use of a route table.
+
+* * *
