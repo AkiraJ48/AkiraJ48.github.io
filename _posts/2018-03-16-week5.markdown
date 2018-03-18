@@ -9,7 +9,8 @@ categories: MYOB
 
 * * *
 
-## [](#header-2)Spring Project Refactoring
+## [](#header-2)Spring Project Refactoring   
+
 ***Initial Refactoring***   
 Initially, I approached the problem of validating my objects via an external
 validator object, which I would pass through to my _Service_ layer, whereupon creating
@@ -46,7 +47,8 @@ nice experience).
 
 * * *
 
-## [](#header-2) Workshops
+## [](#header-2) Workshops  
+
 ***AWS VPC Workshop***   
 1. _VPC (Virtual Private Cloud):_ represents a closed network, where the instances within
 said network can communicate to each other, but not necessarily to external sources. VPC's
@@ -61,5 +63,25 @@ because then we can start using another instance somewhere else or redirect traf
 instance).    
 3. _Subnets:_ represents the sub-division of an IP-address. These can also be representative of the
 availability zones as well. Subnets can communicate to each other via the use of a route table.
+
+***Docker***   
+Had a quick session with Tony, who went over what Docker is, it's benefits and how to
+set it up. I plan on using it for my projects. 
+
+* * *
+
+## [](#header-2) Pairing with Mentor (Graham)
+Pairing session, that involved cleaning up old code base.
+
+* * *
+
+## [](#header-2) React (Frontend)
+Started with creating a simple form in react for creating a dog.
+[Git - Frontend](https://github.com/AkiraJ48/Dog-Rescue-Project-Frontend)
+
+* * *
+
+## [](#header-2) CodeWars
+Have achieved lvl 5.
 
 * * *

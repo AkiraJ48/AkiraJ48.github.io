@@ -5,7 +5,7 @@ date:   2018-03-9 11:07:02 +1100
 categories: Functional
 ---
 
-## [](#header-2) Generator Functions
+# [](#header-1) Generator Functions
 
 ***What is a generator function?***
 The easiest way to think of a generator function, is to imagine that it is an
