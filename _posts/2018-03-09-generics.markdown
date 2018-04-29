@@ -1,0 +1,67 @@
+---
+layout: default
+title:  "Generics"
+date:   2018-03-07 11:07:02 +1100
+categories: Java
+---
+
+# [](#header-1) The Power of Generics
+
+After doing the Tic Tac Toe Kata and Conway's Game Of Life Kata, where each require the usage
+of some "board", i've come to appreciate the usage of generics when it comes to designing for the
+"possibility" of a different board. In my case, the different boards were either for a
+2D board or a 3D board.
+
+Let me know firstly outline my design for each component that is relevant to the usage of a "board".
+Firstly we have the "board" object itself, which for me was typically an abstract model in the
+form:
+
+```
+public abstract class Board<T>{
+    T getBoard();
+    ...
+}
+```
+
+This obviously allows us to design the board however we want, and as long as we
+implement the method getBoard(), all is well.
+
+The next component is my "board handler" which manipulates the board in some manner,
+which will usually follow some design such as:
+
+```
+public interface BoardHandler<T> {
+    void updateBoard(Board<T> board);
+}
+```
+
+Naturally if you want, you can let updateBoard() return some value, for this instance,
+i've set the return type as void.
+
+Therefore, as you can see for each board, we will have a corresponding board handler
+that in some way will manipulate it. Now depending on how visualise our board, we can
+also have some view component as well E.g.
+
+```
+public interface View<T> {
+    updateView(T contents);
+}
+```
+
+Typically we have some final class that makes use of both our "view" and "board handler",
+such a "game" or "world" class. To tie the types of View and Board together we can do
+something such as:
+
+```
+public class Game<T> {
+    public Game(View<T>, BoardUpdater<T>) {
+        ...
+    }
+}
+```
+
+Here we've identified that both our view, BoardUpdater and board must all be
+of the same type, thereby tieing them together. This is extremely useful, as
+it ensures that at compile time, we know that each component within our system
+is working with the same types, and therefore at runtime, there will be no
+potential for any class-related errors/exceptions to occur.  

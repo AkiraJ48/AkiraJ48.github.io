@@ -56,6 +56,67 @@ So too it is unprofessional for programmers to bend to the will of managers who 
 
 * * *
 
-## [](#header-2) Chapter 2
+## [](#header-2) Chapter 2 - Meaningful Names
 
-* * *
+***Use Intention-Revealing Names***
+>The problem isn’t the simplicity of the code but the implicity of the code (to coin a phrase): the degree to which the context is not explicit in the code itself.
+
+***Avoid Disinformation***
+>Spelling similar concepts similarly is information. Using inconsistent spellings is dis- information.
+
+***Make Meaninigful Distinctions***
+>Number-series naming (a1, a2, .. aN) is the opposite of intentional naming. Such names are not disinformative—they are noninformative; they provide no clue to the author’s intention.
+>Imagine that you have a Product class. If you have another called ProductInfo or ProductData, you have made the names dif- ferent without making them mean anything different.
+
+***Use Pronounceable Names***
+>If you can’t pronounce it, you can’t discuss it without sounding like an idiot
+
+***Use Searchable Names***
+>Don't use single letter variables i.e. 'e'
+
+***Avoid Encodings***
+
+***Hungarian Notation***
+>E.g. PhoneNumber phoneString;
+
+***Member Prefixes***
+> Don't do m_something ...
+
+***Interfaces and Implementations***
+> For interfaces try not to do IInterface (don't know why)
+
+***Avoid Mental Mapping***
+>Readers shouldn’t have to mentally translate your names into other names they already know.
+E.g. using a as a variable name, people may have to map it something like accountName etc.
+
+***Class Names***
+> Should be a noun phrase
+
+***Method Names***
+> Should be a verb phrase
+
+***Don't be cute***
+> Say what you mean. Mean what you say.
+E.g. don't use whack() just use kill()
+
+***Pick One Word per Concept***
+> If you use multiple connotations of something e.g. fetch, get, retrieve and they all
+do the same thing, then just use one word instead. It gets annoying. Same with controllers
+managers and drivers.
+
+***Don't Pun***
+
+
+***Use Solution Domain Names***
+> People who read your code will be programmers. So go ahead and use technical terms (
+e.g. algorithms, patterns, maths etc.
+)
+
+***Use Problem Domain Names***
+> Use words in the domain e.g. accounting - invoice
+
+***Add Meaningful Context***
+> Add context to variables by closing them within a function or class
+
+***Don’t Add Gratuitous Context***
+> In an imaginary application called “Gas Station Deluxe,” it is a bad idea to prefix every class with GSD.
