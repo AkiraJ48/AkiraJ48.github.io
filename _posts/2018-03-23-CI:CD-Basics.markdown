@@ -150,7 +150,7 @@ to interact with the following services: ECR, S3 and CodeDeploy.
 5. A policy, that provides services to expand tags and interact with Auto-Scaling.
 (It's a default AWS policy)
 
-***Entities:*** There are 2 entities that we have to create:
+***Entities:*** There are 3 entities that we have to create:
 1. A role that we will assign to our instance.
     -> This will contain policies 2 & 4.
 2. A role that we will assign to our CodeDeploy application.
@@ -202,11 +202,11 @@ travis will firstly be able to push your docker image to ECR, and then deploy th
 scripts to S3 and your EC2 instance to then pull that docker image and build it within your instance.
 This information will contain the following:  
     1. Access/Secret Keys (that have been encrypted) for a user who has the necessary permissions
-    to push to ECR and relevant S3 / CodeDeply functionality.
-    2. Docker Services   
-    3. Building your docker image
-    4. Pushing the docker image to ECR
-    5. Deploying a script to your EC2 instance to then pull the docker image from ECR
+    to push to ECR and relevant S3 / CodeDeply functionality.   
+    2. Docker Services     
+    3. Building your docker image   
+    4. Pushing the docker image to ECR  
+    5. Deploying a script to your EC2 instance to then pull the docker image from ECR   
 
 ***Appspec.yml File:*** Your appspec.yml file will contain the necessary information involved in
 the deployment process (via CodeDeploy). Essentially within the file, you will define within which
@@ -221,6 +221,6 @@ you've designed and/or what policies you've assigned to which entities. Most lik
 given the relevant policy to enable that entity to do something.
 2. If applicable, run the given commands on a local machine or your EC2 instance instead
 of running them within Travis' build pipeline -- otherwise you'll always be waiting a couple of minutes
-(especially if you're building a docker image every time). 
+(especially if you're building a docker image every time).
 
 * * *
