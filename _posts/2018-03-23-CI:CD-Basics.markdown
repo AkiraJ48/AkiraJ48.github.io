@@ -97,49 +97,56 @@ and push it to our EC2 instance.
 * * *
 
 # [](#header-1) Setting up CI/CD w/ the following services:
--> IAM (Identity and Access Management)
--> Docker Registry
--> Travis
--> S3 buckets
--> CodeDeploy
--> EC2
--> ECR (Elastic Container Registry)
+1. IAM (Identity and Access Management)  
+2. Docker Registry  
+3. Travis  
+4. S3 buckets  
+5. CodeDeploy  
+6. EC2  
+7. ECR (Elastic Container Registry)  
+
+* * *
 
 ## [](#header-2) Recommendations (Blogs to read through prior)
-1. A good starting blog on how to deploy to an EC2 instance, making use of: Travis, IAM, EC2, S3 and CodeDeploy.
+1. A good starting blog on how to deploy to an EC2 instance, making use of: Travis, IAM, EC2, S3 and CodeDeploy.  
 [Deployment with Travis & EC2 Blog](https://medium.com/@itsdavidthai/comprehensive-aws-ec2-deployment-with-travisci-guide-7cafa9c754fc)  
 I would recommend going through this, to get an understanding of how permissions are used for
 AWS services, and how to actually write a simple travis build file that uses different services.
 
-2. This is another good blog that details how to build a docker image and push that image to Amazons ECR.
-[Pushing to ECR with Docker](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#use-ecr)
+2. This is another good blog that details how to build a docker image and push that image to Amazons ECR.   
+[Pushing to ECR with Docker](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#use-ecr)   
 However, this does not go into detail in regards to creating permissions for an entity for allowing access
 to an ECR instance -- so if you do come across errors relating to authentication, look at whether you actually
 have permission to push to that registry with your given credentials.
 
-3. A good blog that describes how to orient your travis.yml file in regards to the build step.
-[Understanding the Travis lifecycle](https://docs.travis-ci.com/user/customizing-the-build)
+3. A good blog that describes how to orient your travis.yml file in regards to the build step.  
+[Understanding the Travis lifecycle](https://docs.travis-ci.com/user/customizing-the-build)   
 Recommend this in order to understand the build lifecycle.
 
-4. A good blog detailing how access management works within AWS.  
-[Understanding IAM ](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html)
+4. A good blog detailing how access management works within AWS.    
+[Understanding IAM ](https://docs.aws.amazon.com/IAM/latest/UserGuide/access.html)   
 
-5. A good blog detailing how to authorize your AWS credentials for a given Amazon defined user.
-[Configuring AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+5. A good blog detailing how to authorize your AWS credentials for a given Amazon defined user.  
+[Configuring AWS credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)   
 Recommended for manual authorization of a users credentials, but doesn't reflect how to use secrets as a method
 of authorization.
 
-## [](#header-2) Set-up
+* * *
 
-### [](#header-3) Setting up permissions with IAM
+## [](#header-2) Setting up the necessities
+
+* * *
+
+### [](#header-3) Permissions with IAM
 Firstly we have to set up all relevant entities and policies that are necessary
 to interact with the following services: ECR, S3 and CodeDeploy.
 
-***Policies:*** We will have 4 policies:
-1. A policy, that has permission to put objects into our S3 bucket (to be used by Travis).
-2. A policy, that has permission to read objects from our S3 bucket (to be used by CodeDeploy).
-3. A policy, that has permission to create/use deployments from CodeDeploy (to be used by Travis).
-4. A policy, that has permission to push/pull from ECR (to be used by Travis and our EC2 Instance).
+***Policies:*** We will have 5 policies:
+1. A policy, that has permission to put objects into our S3 bucket (to be used by Travis).   
+2. A policy, that has permission to read objects from our S3 bucket (to be used by CodeDeploy).  
+3. A policy, that has permission to create/use deployments from CodeDeploy (to be used by Travis).  
+4. A policy, that has permission to push/pull from ECR (to be used by Travis and our EC2 Instance).  
+    -> There is a default AWS policy that you can use, that allows for full permissions for ECR.   
 5. A policy, that provides services to expand tags and interact with Auto-Scaling.
 (It's a default AWS policy)
 
@@ -157,6 +164,8 @@ given policy.
 
 Once all the relevant policies and entities are set up, we have to make use of them
 in some manner. For our _EC2 Instance_ we will assign in our create "role" entity.
+
+* * *
 
 ### [](#header-3) Creating AWS applications
 Next we have to create all the relevant application services: EC2, ECR, S3, Travis and CodeDeploy.
@@ -184,4 +193,34 @@ Once all services have been created, and we've added all necessary permissions,
 then "hopefully" you shouldn't have to run into and authentication/credential problems
 along the way.
 
+* * *
+
 ### [](#header-3) Creating your travis.yml and appspec.yml files
+
+***Travis.yml File:*** Your travis.yml file will contain certain necessary information, so that
+travis will firstly be able to push your docker image to ECR, and then deploy the necessary
+scripts to S3 and your EC2 instance to then pull that docker image and build it within your instance.
+This information will contain the following:  
+    1. Access/Secret Keys (that have been encrypted) for a user who has the necessary permissions
+    to push to ECR and relevant S3 / CodeDeply functionality.
+    2. Docker Services   
+    3. Building your docker image
+    4. Pushing the docker image to ECR
+    5. Deploying a script to your EC2 instance to then pull the docker image from ECR
+
+***Appspec.yml File:*** Your appspec.yml file will contain the necessary information involved in
+the deployment process (via CodeDeploy). Essentially within the file, you will define within which
+directory you are deploying your files, with what permissions they are being deployed with,
+and which scripts you are then executing when they are deployed to the EC2 instance.
+
+* * *
+
+### [](#header-3) Pieces of advice
+1. If you're presented with issues of authentication/credentials, take a look at the policies
+you've designed and/or what policies you've assigned to which entities. Most likely, you have not
+given the relevant policy to enable that entity to do something.
+2. If applicable, run the given commands on a local machine or your EC2 instance instead
+of running them within Travis' build pipeline -- otherwise you'll always be waiting a couple of minutes
+(especially if you're building a docker image every time). 
+
+* * *
