@@ -7,7 +7,7 @@ categories: Java
 
 # [](#header-1) Building a Web Framework in Java
 When one thinks of what a web framework should offer to developers,
-the number 1 feature that is necessary is request mapping; given a
+the number one feature that is necessary is request mapping; given a
 request to some url by a client, that should be mapped to some method
 that has been defined by the developer. Today that's what we'll be looking at,
 how request mapping works, and how we can use Annotations in Java as a means
@@ -76,5 +76,12 @@ Once we have the given annotation, we can then retrieve the parameters that
 the developer has added (e.g. the path and request type). Once we have those parameters,
 whenever a request comes in from a client that matches those parameters, we can then
 invoke that given method.
+
+* * *
+
+## [](#header-2) Java Proxies
+Arguably, most frameworks will have some level of logging or validation that is unknown to the
+user, and for Java, one way of abstracting away this functionality is through the use of
+proxies. To read up on what proxies are, check out my blog on the right titled "Proxies & Cross-cutting concerns".
 
 * * *

@@ -65,3 +65,5 @@ of the same type, thereby tieing them together. This is extremely useful, as
 it ensures that at compile time, we know that each component within our system
 is working with the same types, and therefore at runtime, there will be no
 potential for any class-related errors/exceptions to occur.  
+
+* * *
