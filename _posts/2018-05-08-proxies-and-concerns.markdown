@@ -86,14 +86,14 @@ used within our code.
 
 * * *
 
-# [](#header-2) Why use Java Proxies?
+## [](#header-2) Why use Java Proxies?
 
 So what's the point of actually using java proxies? Good question, most
 programmers would rarely ever actually use java proxies.
 Though that's not to mean you will never use it, java proxies can be a great way
 of abstracting away functionality that is prevalent within many classes.
 For example, you will find proxies being used heavily in frameworks, such as Spring, which implements it
-for a variety of "cross-cutting concerns", such as validation, logging and security.
+for a variety of ***cross-cutting concerns***, such as validation, logging and security.
 
 Thus, for "concerns/aspects" that you find prevalent throughout large parts of code,
 using a proxy may be a good way to abstracting away that "concern", and allowing for
@@ -101,22 +101,20 @@ your modules to adhere to the SRP (Single responsibility principle).
 
 * * *
 
-# [](#header-2) Blogs for further clarification   
-[http://www.baeldung.com/java-dynamic-proxies](A good read on java proxies)
-
-* * *
-
-# [](#header-1) What is a Cross-cutting concern?
+## [](#header-2) What is a Cross-cutting concern?
 Cross-cutting concerns are parts of a program that rely on or must affect many
 other parts of the system. Cross-cutting concerns can be directly responsible for
 tangling, or system inter-dependencies, within a program.
 
+For example, logging information/warnings whenever something occurs. Logging will
+typically be very prevalent throughout a large code base. To overcome this,
+one method is using a proxy, and by doing so, we can encapsulate that logging process
+within individual classes/objects instead of mixing them throughout
+classes that implement our business logic.
+
 * * *
 
+## [](#header-2) Blogs for further clarification   
+[http://www.baeldung.com/java-dynamic-proxies](A good read on java proxies)
 
-
-
-What are Java Proxies & "Cross-cutting concerns?"
--> Give examples from code
--> Talk about Spring
--> Talk about encapsulation of aspects
+* * *
