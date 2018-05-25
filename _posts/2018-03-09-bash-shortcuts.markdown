@@ -18,4 +18,6 @@ META q = store current line (then press enter to get it back)
 CTRL A = go to start of line  
 CTRL E = go to end of line  
 
+find . -name '*.cs' -print0 | xargs -0 grep -i 'SpendMoneyContainerService'
+
 * * *
